@@ -270,7 +270,7 @@ function solve(
 
   params = PrimalDualOptimizerParameters(
     nothing, # step_size (forces the solver to use a provably correct step size)
-    true, # rescaling
+    true, # rescale
     5, # record every
     20, # print every
     true, # verbose
