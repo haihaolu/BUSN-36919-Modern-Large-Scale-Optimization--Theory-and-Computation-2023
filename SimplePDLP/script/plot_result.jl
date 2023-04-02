@@ -1,6 +1,6 @@
 import Plots
 import JLD2
-include("../src/MyPDLP.jl")
+include("../src/SimplePDLP.jl")
 
 @assert length(ARGS) == 3
 result_folder = ARGS[1]
