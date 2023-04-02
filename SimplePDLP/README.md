@@ -1,5 +1,4 @@
-# SimplePDLP
-HISTORY Forked from https://github.com/google-research/FirstOrderLp.jl which originally stated Apache-2.0 as its license.
+# MyPDLP
 
 ## Setup
 
@@ -15,7 +14,7 @@ $ julia --project -e 'import Pkg; Pkg.instantiate()'
 ## Running instances
 
 ```shell
-$ julia --project script/run_problem.jl [directory_for_problem_instances] [results_directory] [problem_name] [KKT_tolerance]
+$ julia --project script/run_problem.jl [directory_for_problem_instances] [results_directory] [problem_name]
 ```
 
 ## Plotting results
