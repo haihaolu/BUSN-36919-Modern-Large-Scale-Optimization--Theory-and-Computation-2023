@@ -270,9 +270,9 @@ function solve(
 
   params = PrimalDualOptimizerParameters(
     nothing, # step_size (forces the solver to use a provably correct step size)
-    true, # rescale
+    true, # rescaling
     5, # record every
-    20, # print every
+    4, # print every
     true, # verbose
     iteration_limit, # iteration limit
     kkt_tolerance, # kkt tolerance
