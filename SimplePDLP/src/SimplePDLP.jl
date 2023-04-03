@@ -12,6 +12,7 @@ import QPSReader
 import Statistics
 import StructTypes
 
+
 const Diagonal = LinearAlgebra.Diagonal
 const diag = LinearAlgebra.diag
 const dot = LinearAlgebra.dot

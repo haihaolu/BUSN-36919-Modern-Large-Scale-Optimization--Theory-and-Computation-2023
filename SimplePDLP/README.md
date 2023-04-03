@@ -15,12 +15,19 @@ $ julia --project -e 'import Pkg; Pkg.instantiate()'
 ## Running instances
 
 ```shell
-$ julia --project script/run_problem.jl [directory_for_problem_instances] [results_directory] [problem_name] [KKT_tolerance]
+$ julia --project script/run_problem.jl [directory_for_problem_instances] [results_directory] [problem_name] [KKT_tolerance] [iteration_limit]
 ```
 
 ## Plotting results
 
 ```shell
-$ julia --project script/plot_result.jl [directory_for_solver_output] [figures_directory] [problem_name]
+$ julia --project script/plot_result.jl [directory_for_solver_output] [figure_directory] [problem_name]
+```
+
+## Example
+
+```shell
+$ julia --project script/run_problem.jl --problem_folder=./data --output_directory=./output/solver_output --problem_name=neos5 --kkt_tolerance=1e-6 --iteration_limit=20000
+$ julia --project script/plot_result.jl --directory_for_solver_output=./output/solver_output --figure_directory=./output/figure --problem_name=neos5
 ```
 
