@@ -262,6 +262,8 @@ function solve(
   initial_primal_solution::Vector{Float64},
   initial_dual_solution::Vector{Float64},
 )
+
+  #status = MOI.OTHER_ERROR
   println("solving problem with: ")
   print("rows = ", size(problem.constraint_matrix, 1), ", ")
   print("cols = ", size(problem.constraint_matrix, 2), ", ")
