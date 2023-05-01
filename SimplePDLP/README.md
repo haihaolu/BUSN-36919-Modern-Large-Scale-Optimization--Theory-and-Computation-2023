@@ -1,13 +1,19 @@
 # SimplePDLP
+<<<<<<< HEAD
+
+HISTORY Forked from https://github.com/google-research/FirstOrderLp.jl which originally stated Apache-2.0 as its license.
+=======
 HISTORY Forked from https://github.com/google-research/FirstOrderLp.jl which originally stated Apache-2.0 as its license.
 
 This directory is intended exclusively for teaching purpose to illustrate how to design and implement a solver in Julia using an example of PDHG for LP.  The implementation may not be computationally efficient, but rather include most of the basic components of a first-order method LP solver. A more sophisticated Julia implementation of the algorithm can be found at [FirstOrderLp.jl](https://github.com/google-research/FirstOrderLp.jl), and a more efficient C++ implementation of the algorithm is included in [OR-Tools](https://github.com/google/or-tools).
+>>>>>>> 79e9d44b46f82b663205049c86e478fd4e743527
 
 ## Setup
 
 All commands below assume that the current directory is the working directory.
 
 A one-time step is required to set up the necessary packages on the local
+
 machine:
 
 ```shell
@@ -17,7 +23,11 @@ $ julia --project -e 'import Pkg; Pkg.instantiate()'
 ## Running instances
 
 ```shell
+<<<<<<< HEAD
+$ julia --project script/run_problem.jl [directory_for_problem_instances] [results_directory] [problem_name] [KKT_tolerance]
+=======
 $ julia --project script/run_problem.jl [directory_for_problem_instances] [results_directory] [problem_name] [KKT_tolerance] [iteration_limit]
+>>>>>>> 79e9d44b46f82b663205049c86e478fd4e743527
 ```
 
 ## Plotting results
@@ -33,6 +43,7 @@ $ julia --project script/run_problem.jl --problem_folder=./data --output_directo
 $ julia --project script/plot_result.jl --directory_for_solver_output=./output/solver_output --figure_directory=./output/figure --problem_name=neos5
 ```
 
+<<<<<<< HEAD
 ## JuMP interface
 HISTORY Forked from https://github.com/Shuvomoy/SimplePDHG.jl and [discourse link](https://discourse.julialang.org/t/connecting-a-simple-first-order-solver-to-solve-standard-form-linear-program-to-jump/95694).
 
@@ -58,4 +69,6 @@ println("Objective value: ", objective_value(model))
 println("x = ", value.(x))
 x_star = value.(x)
 ```
+=======
+>>>>>>> a720a9c29dcda8947f59fb42e2d5e0d25019f211
 
