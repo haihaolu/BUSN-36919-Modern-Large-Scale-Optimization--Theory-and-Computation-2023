@@ -69,6 +69,4 @@ println("Objective value: ", objective_value(model))
 println("x = ", value.(x))
 x_star = value.(x)
 ```
-=======
->>>>>>> a720a9c29dcda8947f59fb42e2d5e0d25019f211
 
