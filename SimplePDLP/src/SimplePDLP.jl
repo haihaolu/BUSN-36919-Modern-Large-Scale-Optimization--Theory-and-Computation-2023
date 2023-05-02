@@ -11,6 +11,7 @@ import GZip
 import QPSReader
 import Statistics
 import StructTypes
+import MathOptInterface as MOI
 
 
 const Diagonal = LinearAlgebra.Diagonal
