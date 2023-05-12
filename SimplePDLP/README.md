@@ -2,7 +2,7 @@
 
 
 This directory is intended for teaching purpose to illustrate how to design, structure and implement a solver in Julia using an example of PDHG for LP of the form
-$$\min_{x} c^T x, s.t. Ax=b, Gx\l=h, l\le x\le u .$$ It includes reading the data from an .mps file, preconditioning, PDHG, outputting, etc. The implementation may not be computationally efficient, but rather include most of the basic components of a first-order method LP solver. A more sophisticated Julia implementation of the algorithm can be found at [FirstOrderLp.jl](https://github.com/google-research/FirstOrderLp.jl), and a more efficient C++ implementation of the algorithm is included in [OR-Tools](https://github.com/google/or-tools).
+$$\min_{x} c^T x, s.t. Ax=b, Gx\l=h, l \le x \le u .$$ It includes reading the data from an .mps file, preconditioning, PDHG, outputting, and examples of solving an instances, plotting the output, and calling from the JuMP interface. The implementation is not to be computationally efficient, but rather include most of the basic components of a first-order method LP solver. A more sophisticated Julia implementation of the algorithm can be found at [FirstOrderLp.jl](https://github.com/google-research/FirstOrderLp.jl), and the C++ production-level implementation of the algorithm is included in [OR-Tools](https://github.com/google/or-tools).
 
 
 Part of the code utilize https://github.com/google-research/FirstOrderLp.jl which originally stated Apache-2.0 as its license and https://github.com/Shuvomoy/SimplePDHG.jl.
